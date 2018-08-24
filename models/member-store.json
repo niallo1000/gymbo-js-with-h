@@ -11,29 +11,65 @@
       "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "assessments": [
         {
-          "id": "de521cf2-6f6a-4375-9b4f-13d14d63ed55",
-          "weight": "50",
+          "id": "fa3dc2e5-c524-446c-a597-746c22e3dfd7",
+          "weight": "155",
+          "chest": "35",
+          "thigh": "35",
+          "upperArm": "40",
+          "waist": "40",
+          "hips": "40"
+        },
+        {
+          "id": "c33402f7-d038-47ee-b653-6f2459f1bc59",
+          "weight": "165",
+          "chest": "36",
+          "thigh": "36",
+          "upperArm": "36",
+          "waist": "36",
+          "hips": "36"
+        },
+        {
+          "id": "186a60df-8a43-49e9-9d10-fa7165834129",
+          "weight": "160",
+          "chest": "36",
+          "thigh": "36",
+          "upperArm": "36",
+          "waist": "36",
+          "hips": "36"
+        },
+        {
+          "id": "bfaf4c18-85cb-461b-be55-86fe3dc590d3",
+          "weight": "150",
+          "chest": "40",
+          "thigh": "40",
+          "upperArm": "40",
+          "waist": "40",
+          "hips": "40"
+        },
+        {
+          "id": "3350a1ea-7c5a-440d-917b-740393d900f1",
+          "weight": "165",
+          "chest": "55",
+          "thigh": "55",
+          "upperArm": "55",
+          "waist": "55",
+          "hips": "55"
+        },
+        {
+          "id": "76437ed5-5db3-4ccb-b1e6-d5d6c24e1623",
+          "weight": "170",
+          "chest": "82",
+          "thigh": "45",
+          "upperArm": "60",
+          "waist": "39",
+          "hips": "49"
+        },
+        {
+          "id": "b483b08b-2cfe-465b-a18f-02eec2d1552d",
+          "weight": "44",
           "chest": "100",
           "thigh": "250",
-          "upperarm": "30",
-          "waist": "255",
-          "hips": "20"
-        },
-        {
-          "id": "e84c3fad-c806-4e60-aa9e-0f9077169488",
-          "weight": "99",
-          "chest": "99",
-          "thigh": "99",
-          "upperarm": "99",
-          "waist": "99",
-          "hips": "99"
-        },
-        {
-          "id": "7ad0d358-9dbd-43d8-a5b3-4de6a533b3fc",
-          "weight": "44",
-          "chest": "44",
-          "thigh": "44",
-          "upperarm": "44",
+          "upperArm": "55",
           "waist": "44",
           "hips": "44"
         }

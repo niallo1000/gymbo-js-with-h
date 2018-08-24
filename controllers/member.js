@@ -3,6 +3,7 @@
 const logger = require('../utils/logger');
 const memberStore = require('../models/member-store');
 const uuid = require('uuid');
+const accounts = require ('./accounts.js');
 
 const member = {
   index(request, response) {
@@ -25,19 +26,23 @@ const member = {
 
   addAssessment(request, response) {
     const memberId = request.params.id;
+    const loggedInUser = accounts.getCurrentMember(request);
     const member = memberStore.getMember(memberId);
     const newAssessment = {
       id: uuid(),
       weight: request.body.weight,
       chest: request.body.chest,
       thigh: request.body.thigh,
-      upperarm: request.body.upperarm,
+      upperArm: request.body.upperArm,
       waist: request.body.waist,
-      hips: request.body.hips,      
+      hips: request.body.hips, 
+      username: loggedInUser.name,
     };
     logger.debug('New Assessment = ', newAssessment);
-    memberStore.addAssessment(memberId, newAssessment);
-    response.redirect('/member/' + memberId);
+   memberStore.addAssessment(loggedInUser.id, newAssessment);
+  // memberStore.addAssessment(memberId, newAssessment);
+    response.redirect('/dashboard');
+ //   response.redirect('/member/' + memberId);
   },
 };
 
