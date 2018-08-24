@@ -1,0 +1,30 @@
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Song</th>
+      <th>Artist</th>
+      <th>Duration</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each member.assessments}}
+      <tr>
+        <td>
+          {{weight}}
+        </td>
+        <td>
+          {{chest}}
+        </td>
+        <td>
+          {{thigh}}
+        </td>
+        <td>
+          <a href="/member/{{../member.id}}/deleteassessment/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

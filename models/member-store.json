@@ -1,0 +1,63 @@
+{
+  "memberCollection": [
+    {
+      "name": "homer",
+      "gender": "male",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "address": "Springfield",
+      "height": "6",
+      "startingweight": "150",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "assessments": [
+        {
+          "id": "de521cf2-6f6a-4375-9b4f-13d14d63ed55",
+          "weight": "50",
+          "chest": "100",
+          "thigh": "250",
+          "upperarm": "30",
+          "waist": "255",
+          "hips": "20"
+        },
+        {
+          "id": "e84c3fad-c806-4e60-aa9e-0f9077169488",
+          "weight": "99",
+          "chest": "99",
+          "thigh": "99",
+          "upperarm": "99",
+          "waist": "99",
+          "hips": "99"
+        },
+        {
+          "id": "7ad0d358-9dbd-43d8-a5b3-4de6a533b3fc",
+          "weight": "44",
+          "chest": "44",
+          "thigh": "44",
+          "upperarm": "44",
+          "waist": "44",
+          "hips": "44"
+        }
+      ]
+    },
+    {
+      "name": "marge",
+      "gender": "female",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "Springfield",
+      "height": "4",
+      "startingweight": "50",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "name": "Niall O'Neill",
+      "gender": "M",
+      "email": "nialloneill32@gmail.com",
+      "password": "mike",
+      "address": "5 grange meadows",
+      "height": "3",
+      "startingweight": "86",
+      "id": "71471a5c-8e39-485e-8b00-91444bcb6bfe"
+    }
+  ]
+}
