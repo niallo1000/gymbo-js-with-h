@@ -44,13 +44,9 @@ const memberStore = {
     return this.store.findOneBy(this.collection, { email: email });
   },
 
-  addAssessment(id, assessment) {
-    const member = this.getMember(id);
+  addAssessment(memberid, assessment) {
+    const member = this.getMember(memberid);
     member.assessments.push(assessment);
-    
-
-
-
     this.store.save();
   },
 

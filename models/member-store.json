@@ -11,67 +11,40 @@
       "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "assessments": [
         {
-          "id": "fa3dc2e5-c524-446c-a597-746c22e3dfd7",
-          "weight": "155",
-          "chest": "35",
-          "thigh": "35",
-          "upperArm": "40",
-          "waist": "40",
-          "hips": "40"
+          "id": "19e4a7e0-3779-418b-b2cb-de7a1dbd0b48",
+          "weight": "99",
+          "chest": "99",
+          "thigh": "99",
+          "upperArm": "5",
+          "waist": "99",
+          "hips": "99"
         },
         {
-          "id": "c33402f7-d038-47ee-b653-6f2459f1bc59",
-          "weight": "165",
-          "chest": "36",
-          "thigh": "36",
-          "upperArm": "36",
-          "waist": "36",
-          "hips": "36"
+          "id": "3c6710e6-0b29-4899-85fe-837f2eafe9f7",
+          "weight": "77",
+          "chest": "77",
+          "thigh": "77",
+          "upperArm": "77",
+          "waist": "77",
+          "hips": "77"
         },
         {
-          "id": "186a60df-8a43-49e9-9d10-fa7165834129",
-          "weight": "160",
-          "chest": "36",
-          "thigh": "36",
-          "upperArm": "36",
-          "waist": "36",
-          "hips": "36"
+          "id": "c9bb7f53-951c-4503-b983-273184b7c88d",
+          "weight": "66",
+          "chest": "66",
+          "thigh": "66",
+          "upperArm": "66",
+          "waist": "66",
+          "hips": "66"
         },
         {
-          "id": "bfaf4c18-85cb-461b-be55-86fe3dc590d3",
-          "weight": "150",
-          "chest": "40",
-          "thigh": "40",
-          "upperArm": "40",
-          "waist": "40",
-          "hips": "40"
-        },
-        {
-          "id": "3350a1ea-7c5a-440d-917b-740393d900f1",
-          "weight": "165",
-          "chest": "55",
-          "thigh": "55",
-          "upperArm": "55",
-          "waist": "55",
-          "hips": "55"
-        },
-        {
-          "id": "76437ed5-5db3-4ccb-b1e6-d5d6c24e1623",
-          "weight": "170",
-          "chest": "82",
-          "thigh": "45",
-          "upperArm": "60",
-          "waist": "39",
-          "hips": "49"
-        },
-        {
-          "id": "b483b08b-2cfe-465b-a18f-02eec2d1552d",
-          "weight": "44",
-          "chest": "100",
-          "thigh": "250",
-          "upperArm": "55",
-          "waist": "44",
-          "hips": "44"
+          "id": "ca2809c1-d6f0-44ba-b009-8969cd7409d7",
+          "weight": "50",
+          "chest": "33",
+          "thigh": "33",
+          "upperArm": "33",
+          "waist": "33",
+          "hips": "33"
         }
       ]
     },
@@ -93,7 +66,37 @@
       "address": "5 grange meadows",
       "height": "3",
       "startingweight": "86",
-      "id": "71471a5c-8e39-485e-8b00-91444bcb6bfe"
+      "id": "71471a5c-8e39-485e-8b00-91444bcb6bfe",
+      "assessments": [
+        {
+          "id": "392e0db0-8068-4f53-98a8-6c1affb9feee",
+          "weight": "76",
+          "chest": "76",
+          "thigh": "76",
+          "upperArm": "76",
+          "waist": "76",
+          "hips": "76"
+        },
+        {
+          "id": "bf494a94-03e8-4297-9f18-6d14be5e2132",
+          "weight": "78",
+          "chest": "78",
+          "thigh": "78",
+          "upperArm": "78",
+          "waist": "78",
+          "hips": "78"
+        }
+      ]
+    },
+    {
+      "name": "mile",
+      "gender": "M",
+      "email": "michael32@gmail.com",
+      "password": "mike",
+      "address": "rosslare",
+      "height": "2.2",
+      "startingweight": "60",
+      "id": "15f100fc-d325-430e-8c53-9d3bfe6390b6"
     }
   ]
 }

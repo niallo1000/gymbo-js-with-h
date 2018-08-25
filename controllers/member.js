@@ -26,7 +26,6 @@ const member = {
 
   addAssessment(request, response) {
     const memberId = request.params.id;
-    const loggedInUser = accounts.getCurrentMember(request);
     const member = memberStore.getMember(memberId);
     const newAssessment = {
       id: uuid(),
@@ -36,13 +35,10 @@ const member = {
       upperArm: request.body.upperArm,
       waist: request.body.waist,
       hips: request.body.hips, 
-      username: loggedInUser.name,
     };
     logger.debug('New Assessment = ', newAssessment);
-   memberStore.addAssessment(loggedInUser.id, newAssessment);
-  // memberStore.addAssessment(memberId, newAssessment);
-    response.redirect('/dashboard');
- //   response.redirect('/member/' + memberId);
+   memberStore.addAssessment(memberId, newAssessment);
+   response.redirect('/member/' + memberId);
   },
 };
 

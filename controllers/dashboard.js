@@ -37,19 +37,7 @@ const dashboard = {
     memberStore.addMember(newMember);
     response.redirect('/dashboard');
   },
-    addAssessment(request, response) {
-    const memberId = request.params.id;
-    const member = memberStore.getMember(memberId);
-    const newAssessment = {
-      id: uuid(),
-      title: request.body.title,
-      artist: request.body.artist,
-      duration: Number(request.body.duration),
-    };
-    logger.debug('New Assessment = ', newAssessment);
-    memberStore.addAssessment(memberId, newAssessment);
-    response.redirect('/member/' + memberId);
-  },
+
   
    
 
