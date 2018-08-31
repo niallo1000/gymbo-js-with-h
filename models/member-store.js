@@ -16,7 +16,7 @@ const memberStore = {
     return this.store.findOneBy(this.collection, { id: id });
   },
   
-    getMemeberById(id) {
+    getMemberById(id) {
     return this.store.findOneBy(this.collection, { id: id });
   },
 
@@ -55,6 +55,29 @@ const memberStore = {
     const assessments = member.assessments;
     _.remove(assessments, { id: assessmentId});
     this.store.save();
+  },
+  
+   getAssessment(id) {
+    const test = this.store.findOneBy(this.colection, { id: id });
+    return this.store.findOneBy('members.assessments', { id: id });
+  },
+  
+    addComment(id, memberid, comment) {
+    const member = this.getMember(memberid)
+    const assessment = member.assessments;
+    const update = assessment.map(i=> i.id).indexOf(id);
+    assessment[update].comments = comment;
+    this.store.save();
+  },
+  
+    updateUser(user, update){
+    
+    if(update.password !="") user.password = update.password;
+    if(update.address !="") user.address = update.address;
+    this.store.save();
+
+
+
   },
 };
 

@@ -1,102 +1,158 @@
 {
   "memberCollection": [
     {
-      "name": "homer",
-      "gender": "male",
-      "email": "homer@simpson.com",
-      "password": "secret",
-      "address": "Springfield",
-      "height": "6",
-      "startingweight": "150",
-      "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "assessments": [
-        {
-          "id": "19e4a7e0-3779-418b-b2cb-de7a1dbd0b48",
-          "weight": "99",
-          "chest": "99",
-          "thigh": "99",
-          "upperArm": "5",
-          "waist": "99",
-          "hips": "99"
-        },
-        {
-          "id": "3c6710e6-0b29-4899-85fe-837f2eafe9f7",
-          "weight": "77",
-          "chest": "77",
-          "thigh": "77",
-          "upperArm": "77",
-          "waist": "77",
-          "hips": "77"
-        },
-        {
-          "id": "c9bb7f53-951c-4503-b983-273184b7c88d",
-          "weight": "66",
-          "chest": "66",
-          "thigh": "66",
-          "upperArm": "66",
-          "waist": "66",
-          "hips": "66"
-        },
-        {
-          "id": "ca2809c1-d6f0-44ba-b009-8969cd7409d7",
-          "weight": "50",
-          "chest": "33",
-          "thigh": "33",
-          "upperArm": "33",
-          "waist": "33",
-          "hips": "33"
-        }
-      ]
-    },
-    {
-      "name": "marge",
-      "gender": "female",
-      "email": "marge@simpson.com",
-      "password": "secret",
-      "address": "Springfield",
-      "height": "4",
-      "startingweight": "50",
-      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
-    },
-    {
       "name": "Niall O'Neill",
       "gender": "M",
       "email": "nialloneill32@gmail.com",
       "password": "mike",
-      "address": "5 grange meadows",
-      "height": "3",
+      "address": "Rosslare",
+      "height": "1.8",
       "startingweight": "86",
-      "id": "71471a5c-8e39-485e-8b00-91444bcb6bfe",
+      "id": "f1d610d0-794c-4ead-a543-911bdb3a5c14",
       "assessments": [
         {
-          "id": "392e0db0-8068-4f53-98a8-6c1affb9feee",
-          "weight": "76",
-          "chest": "76",
-          "thigh": "76",
-          "upperArm": "76",
-          "waist": "76",
-          "hips": "76"
+          "id": "10e6bd96-5bd5-4f18-9392-27e347eaf587",
+          "memberid": "f1d610d0-794c-4ead-a543-911bdb3a5c14",
+          "username": "Niall O'Neill",
+          "date": "30 Aug 2018, 7:43:09 pm",
+          "weight": "90",
+          "chest": "48",
+          "thigh": "50",
+          "upperarm": "32",
+          "waist": "32",
+          "hips": "32",
+          "trend": false,
+          "comments": ""
         },
         {
-          "id": "bf494a94-03e8-4297-9f18-6d14be5e2132",
-          "weight": "78",
-          "chest": "78",
-          "thigh": "78",
-          "upperArm": "78",
-          "waist": "78",
-          "hips": "78"
+          "id": "933635ca-8de9-4305-8d10-466c9691e4e5",
+          "memberid": "f1d610d0-794c-4ead-a543-911bdb3a5c14",
+          "username": "Niall O'Neill",
+          "date": "30 Aug 2018, 7:46:54 pm",
+          "weight": "75",
+          "chest": "32",
+          "thigh": "32",
+          "upperarm": "32",
+          "waist": "32",
+          "hips": "32",
+          "trend": false,
+          "comments": ""
         }
-      ]
+      ],
+      "level": "info",
+      "message": "about to render"
     },
     {
-      "name": "mile",
+      "name": "Michael O'Neill",
       "gender": "M",
       "email": "michael32@gmail.com",
-      "password": "mike",
-      "address": "rosslare",
-      "height": "2.2",
+      "password": "Micky",
+      "address": "Rosslare",
+      "height": "1.5",
+      "startingweight": "40",
+      "id": "c8dc1197-5c45-4113-8e90-e7d173718b61",
+      "assessments": [
+        {
+          "id": "59191ec9-3b67-4d6a-ab3f-1639d1059897",
+          "memberid": "c8dc1197-5c45-4113-8e90-e7d173718b61",
+          "username": "Michael O'Neill",
+          "date": "30 Aug 2018, 8:00:55 pm",
+          "weight": "45",
+          "chest": "28",
+          "thigh": "20",
+          "upperarm": "12",
+          "waist": "20",
+          "hips": "20",
+          "trend": false,
+          "comments": ""
+        },
+        {
+          "id": "6a734b94-18db-4e15-9c75-e5562faad8d4",
+          "memberid": "c8dc1197-5c45-4113-8e90-e7d173718b61",
+          "username": "Michael O'Neill",
+          "date": "30 Aug 2018, 8:02:27 pm",
+          "weight": "100",
+          "chest": "27",
+          "thigh": "28",
+          "upperarm": "24",
+          "waist": "26",
+          "hips": "27",
+          "trend": false,
+          "comments": "too  fat"
+        }
+      ],
+      "level": "info",
+      "message": "about to render"
+    },
+    {
+      "name": "laura",
+      "gender": "",
+      "email": "laura@gmail.com",
+      "password": "laura",
+      "address": "15 Seabury",
+      "height": "1.65",
       "startingweight": "60",
-      "id": "15f100fc-d325-430e-8c53-9d3bfe6390b6"
+      "id": "0626e81d-ae18-4f6c-ae4a-bf1c8df5e34d",
+      "assessments": [
+        {
+          "id": "9248673a-5300-408d-ba58-ea79a20ac1e2",
+          "memberid": "0626e81d-ae18-4f6c-ae4a-bf1c8df5e34d",
+          "username": "laura",
+          "date": "30 Aug 2018, 8:07:21 pm",
+          "weight": "35",
+          "chest": "20",
+          "thigh": "20",
+          "upperarm": "20",
+          "waist": "20",
+          "hips": "20",
+          "trend": false,
+          "comments": ""
+        },
+        {
+          "id": "382ba043-c73b-4f85-a19f-c98d51c927ee",
+          "memberid": "0626e81d-ae18-4f6c-ae4a-bf1c8df5e34d",
+          "username": "laura",
+          "date": "30 Aug 2018, 8:08:00 pm",
+          "weight": "100",
+          "chest": "27",
+          "thigh": "52",
+          "upperarm": "85",
+          "waist": "25",
+          "hips": "86",
+          "trend": false,
+          "comments": "stop going mcdonalds"
+        }
+      ],
+      "level": "info",
+      "message": "about to render"
+    },
+    {
+      "name": "lorcan",
+      "gender": "M",
+      "email": "lorcan@gmail.com",
+      "password": "lorc",
+      "address": "Rosslare",
+      "height": "1.85",
+      "startingweight": "89",
+      "id": "6af14112-1b2b-4a60-a176-3246eabbaa77",
+      "assessments": [
+        {
+          "id": "34c9ff57-89df-4e39-8d4c-8e61459543ae",
+          "memberid": "6af14112-1b2b-4a60-a176-3246eabbaa77",
+          "username": "lorcan",
+          "date": "30 Aug 2018, 8:24:16 pm",
+          "weight": "82",
+          "chest": "28",
+          "thigh": "28",
+          "upperarm": "28",
+          "waist": "28",
+          "hips": "28",
+          "trend": false,
+          "comments": "well done fatso"
+        }
+      ],
+      "level": "info",
+      "message": "about to render"
     }
   ]
 }
