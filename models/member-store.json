@@ -1,0 +1,102 @@
+{
+  "memberCollection": [
+    {
+      "name": "homer",
+      "gender": "male",
+      "email": "homer@simpson.com",
+      "password": "secret",
+      "address": "Springfield",
+      "height": "6",
+      "startingweight": "150",
+      "id": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "assessments": [
+        {
+          "id": "19e4a7e0-3779-418b-b2cb-de7a1dbd0b48",
+          "weight": "99",
+          "chest": "99",
+          "thigh": "99",
+          "upperArm": "5",
+          "waist": "99",
+          "hips": "99"
+        },
+        {
+          "id": "3c6710e6-0b29-4899-85fe-837f2eafe9f7",
+          "weight": "77",
+          "chest": "77",
+          "thigh": "77",
+          "upperArm": "77",
+          "waist": "77",
+          "hips": "77"
+        },
+        {
+          "id": "c9bb7f53-951c-4503-b983-273184b7c88d",
+          "weight": "66",
+          "chest": "66",
+          "thigh": "66",
+          "upperArm": "66",
+          "waist": "66",
+          "hips": "66"
+        },
+        {
+          "id": "ca2809c1-d6f0-44ba-b009-8969cd7409d7",
+          "weight": "50",
+          "chest": "33",
+          "thigh": "33",
+          "upperArm": "33",
+          "waist": "33",
+          "hips": "33"
+        }
+      ]
+    },
+    {
+      "name": "marge",
+      "gender": "female",
+      "email": "marge@simpson.com",
+      "password": "secret",
+      "address": "Springfield",
+      "height": "4",
+      "startingweight": "50",
+      "id": "2b6f0989-7b7f-4a38-ad26-aa06b922d751"
+    },
+    {
+      "name": "Niall O'Neill",
+      "gender": "M",
+      "email": "nialloneill32@gmail.com",
+      "password": "mike",
+      "address": "5 grange meadows",
+      "height": "3",
+      "startingweight": "86",
+      "id": "71471a5c-8e39-485e-8b00-91444bcb6bfe",
+      "assessments": [
+        {
+          "id": "392e0db0-8068-4f53-98a8-6c1affb9feee",
+          "weight": "76",
+          "chest": "76",
+          "thigh": "76",
+          "upperArm": "76",
+          "waist": "76",
+          "hips": "76"
+        },
+        {
+          "id": "bf494a94-03e8-4297-9f18-6d14be5e2132",
+          "weight": "78",
+          "chest": "78",
+          "thigh": "78",
+          "upperArm": "78",
+          "waist": "78",
+          "hips": "78"
+        }
+      ]
+    },
+    {
+      "name": "mile",
+      "gender": "M",
+      "email": "michael32@gmail.com",
+      "password": "mike",
+      "address": "rosslare",
+      "height": "2.2",
+      "startingweight": "60",
+      "id": "15f100fc-d325-430e-8c53-9d3bfe6390b6"
+    }
+  ]
+}

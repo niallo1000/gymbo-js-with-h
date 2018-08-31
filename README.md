@@ -1,2 +1,4 @@
-# gym-app
-a repo for Assignment 1 ICT
+Welcome to the Playlist 4
+=========================
+
+Version 4 of the Playlist application

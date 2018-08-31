@@ -1,0 +1,45 @@
+<header class="ui header"> Assessments </header>
+<table class="ui table">
+  <thead>
+    <tr>
+      <th>Waist</th>
+      <th>Chest</th>
+      <th>Thigh</th>
+      <th>Upper Arm</th>
+      <th>Waist</th>
+      <th>Hips</th>      
+      
+      
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each member.assessments}}
+      <tr>
+        <td>
+          {{weight}}
+        </td>
+        <td>
+          {{chest}}
+        </td>
+        <td>
+          {{thigh}}          
+        </td>
+        <td>        
+          {{upperArm}}
+        </td>
+        <td>
+          {{waist}}
+        </td>
+        <td>
+          {{hips}}
+        </td>        
+        <td>
+          <a href="/member/{{../member.id}}/deleteassessment/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
