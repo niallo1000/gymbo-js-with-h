@@ -17,9 +17,9 @@
         <td>
           {{members.name}}
         </td>
-        <td>
-          {{members.gender}}
-        </td>     
+         <td>       
+          {{members.gender}} 
+        </td>           
          <td>
           {{members.email}}           
         </td>
@@ -31,8 +31,12 @@
         </td>     
          <td>
           {{members.startingweight}} kgs          
-        </td>        
+        </td>  
+         <td>
+          <form class="ui form" action="/updatereg/{{id}}" method="POST">
+         <button class="ui blue submit button"> Update </button>
+         </form>
+         </td>         
       </tr>
-
   </tbody>
 </table>

@@ -1,21 +1,24 @@
-<header class="ui header"> Assessments </header>
-<table class="ui table">
+<table class="ui celled table">
   <thead>
     <tr>
-      <th>Waist</th>
+      <th>Date</th>
+      <th>Weight</th>
       <th>Chest</th>
       <th>Thigh</th>
       <th>Upper Arm</th>
       <th>Waist</th>
-      <th>Hips</th>      
-      
-      
+      <th>Hips</th>
+      <th>Trend</th>
+      <th>Comments</th>
       <th></th>
     </tr>
   </thead>
   <tbody>
-    {{#each member.assessments}}
+    {{#each members.assessments}}
       <tr>
+        <td>
+          {{date}}
+        </td>
         <td>
           {{weight}}
         </td>
@@ -23,19 +26,30 @@
           {{chest}}
         </td>
         <td>
-          {{thigh}}          
+          {{thigh}}
         </td>
-        <td>        
-          {{upperArm}}
+        <td>
+          {{upperarm}}
         </td>
         <td>
           {{waist}}
         </td>
         <td>
           {{hips}}
-        </td>        
+        </td>
         <td>
-          <a href="/member/{{../member.id}}/deleteassessment/{{id}}" class="ui icon button">
+          {{#if trend}}
+            <a class="ui teal tag label"></a>
+        {{else}}
+            <a class="ui red tag label"></a>            
+        {{/if}}
+           
+        </td>
+        <td>
+          {{comments}}
+        </td>
+        <td>
+          <a href="/dashboard/{{../member.id}}/deleteassessment/{{id}}" class="ui icon button">
             <i class="icon trash"></i>
           </a>
         </td>
