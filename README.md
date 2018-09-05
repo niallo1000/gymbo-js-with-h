@@ -1,4 +1,10 @@
-Welcome to the Playlist 4
+Welcome to the Gymbo
 =========================
 
-Version 4 of the Playlist application
+ICT Skills
+
+
+Trainer Login - 
+tom@trainer.com
+
+"password": "mike",

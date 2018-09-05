@@ -1,0 +1,37 @@
+<table class="ui celled table">
+  <thead>
+    <tr>
+      <th>Goal</th>
+      <th>Target</th>
+      <th>Target Date</th>
+      <th>Goal Status</th>      
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each members.goals}}
+      <tr>
+        <td>
+          {{goal}}
+        </td>
+        <td>
+          {{target}}
+        </td>
+        <td>
+          {{date}}
+        </td>
+         <td>
+          {{#if goalWeight}}
+            <a class="icon large smile"></a>
+        {{else}}
+            <i class="icon large frown"></i>         
+        {{/if}}           
+        </td>
+       <td>
+          <a href="/dashboard/deletegoal/{{id}}" class="ui icon button">
+            <i class="icon trash"></i>
+          </a>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

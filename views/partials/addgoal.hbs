@@ -1,0 +1,41 @@
+<head>
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css" rel="stylesheet" type="text/css" />
+<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+
+<header class="ui header"> Add Goals </header>
+<form class="ui equal width form raised segment" action="/member/{{members.id}}/addgoal" method="POST">
+	<div class="fields">
+        <div class="field">
+          <label>Goal</label>
+          <select class="ui dropdown" name="goal" placeholder="goal">
+            <option value="">Goal</option>
+            <option value="Reduce Weight To">Reduce Weight To</option>
+            <option value="Reduce BMI To">Reduce BMI To</option>            
+          </select>
+        </div>
+      </div>
+  
+      <div class="two fields">
+        <div class="field">
+          <label>Target</label>
+          <div class="ui fluid right labeled input">
+         <input name="target" required="" type="number" placeholder="00.00" step="1" min="1" max="500">
+          </div>
+        </div>
+		
+        <div class="field">
+          <label>Target Date</label>
+          <div class="ui fluid right labeled input">
+         <input name="date" required="" type="date" placeholder="9/4/2018">
+          </div>	
+        </div>
+        
+        </div>
+        
+	        <button class="ui blue submit button">Add goal</button>
+</form>

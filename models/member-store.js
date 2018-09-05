@@ -43,7 +43,15 @@ const memberStore = {
     getMemberByEmail(email) {
     return this.store.findOneBy(this.collection, { email: email });
   },
+  
+      getMemberByName(name) {
+    return this.store.findOneBy(this.collection, { name: name });
+  },
 
+    getMemberPassword(password) {
+    return this.store.findOneBy(this.collection, { password: password });
+  },
+  
   addAssessment(memberid, assessment) {
     const member = this.getMember(memberid);
     member.assessments.push(assessment);
@@ -52,8 +60,8 @@ const memberStore = {
 
   removeAssessment(id, assessmentId) {
     const member = this.getMember(id);
-    const assessments = member.assessments;
-    _.remove(assessments, { id: assessmentId});
+    const assessment = member.assessments;
+    _.remove(assessment, { id: assessmentId});
     this.store.save();
   },
   
@@ -61,6 +69,8 @@ const memberStore = {
     const test = this.store.findOneBy(this.colection, { id: id });
     return this.store.findOneBy('members.assessments', { id: id });
   },
+  
+
   
     addComment(id, memberid, comment) {
     const member = this.getMember(memberid)
@@ -70,14 +80,26 @@ const memberStore = {
     this.store.save();
   },
   
-    updateUser(user, update){
+  
+    updateMember(member, update){
     
-    if(update.password !="") user.password = update.password;
-    if(update.address !="") user.address = update.address;
+    if(update.password !="") member.password = update.password;
+    if(update.address !="") member.address = update.address;
+    if(update.height !="") member.height = update.height;
+    if(update.startingweight !="") member.startingweight = update.startingweight;      
     this.store.save();
-
-
-
+  },
+  
+    addGoal(memberid, goal) {
+    const member = this.getMember(memberid);
+    member.goals.push(goal);
+    this.store.save();
+  },
+    removeGoal(id, goalId) {
+    const member = this.getMember(id);
+    const goal = member.goals;
+    _.remove(goal, { id: goalId});
+    this.store.save();
   },
 };
 

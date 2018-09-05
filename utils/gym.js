@@ -2,12 +2,12 @@
 
 const accounts = require('../controllers/accounts');
 const dashboard = require('../controllers/dashboard');
-const memberstore = require('../models/member-store');
+const memberstore = require('../models/member-store')
+
 
 const utility = {
 	bmi(loggedInUser){
 		const assessment = loggedInUser.assessments;
-
 		const lastassessment = assessment[assessment.length - 1]
 
 		let weight = loggedInUser.startingweight;
@@ -42,22 +42,23 @@ const utility = {
 		const height = loggedInUser.height;
 		const gender = loggedInUser.gender;
 		const assessment = loggedInUser.assessments;
-		const lastassessment = assessment[assessment.length - 1]
+		const lastassessment = assessment[assessment.length - 1];
+    const feetToInches = 0.254;
+    const fiveFeet = 60;
+    const mvalue = 50;
+    const fvalue = 45;
+    const factor = 2.3;
 
 
 		if (assessment != ""){
 			weight = lastassessment.weight;
 		} 
 
-		let base = null;
-
 		if (gender === "M"){
-			base = 50
+		idealweight = mvalue + factor*((height / feetToInches) - fiveFeet)
 		} else {
-			base = 45.5
+		idealweight = fvalue + factor*((height / feetToInches) - fiveFeet)
 		}
-		idealweight = base + 2.3*((height / 0.0254) - 60)
-
 
 		if (weight <= idealweight){
 			return true;
