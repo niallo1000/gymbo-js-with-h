@@ -21,7 +21,7 @@ const accounts = {
     response.render('login', viewData);
   },
   
-      trainerlogin(request, response) {
+  trainerlogin(request, response) {
     const viewData = {
       title: 'Trainer Login to the Service',
     };
@@ -43,7 +43,8 @@ const accounts = {
   register(request, response) {
     const member = request.body;
     member.id = uuid();
-    member.assessments = [];    
+    member.assessments = []; 
+    member.goals = [];
     memberstore.addMember(member);
     logger.info(`registering ${member.email}`);
     response.redirect('/');
@@ -51,7 +52,9 @@ const accounts = {
 
   authenticate(request, response) {
     const member = memberstore.getMemberByEmail(request.body.email);
-    if (member) {
+    const password = memberstore.getMemberPassword(request.body.password);
+    
+    if ((member) && (password)) {
       response.cookie('member', member.email);
       logger.info(`logging in ${member.email}`);
       response.redirect('/dashboard');
@@ -60,10 +63,11 @@ const accounts = {
     }
   },
   
-  
-      authenticatetrainer(request, response) {
+
+  authenticatetrainer(request, response) {
     const trainer = trainerstore.getTrainerByEmail(request.body.email);
-    if (trainer) {
+    const password = trainerstore.getTrainerPassword(request.body.password);    
+    if ((trainer) && (password)) {
       response.cookie('trainer', trainer.email);
       logger.info(`logging in ${trainer.email}`);
       response.redirect('/trainerdashboard');
@@ -85,21 +89,16 @@ const accounts = {
     updatereg(request, response){
 
     const loggedInUser = accounts.getCurrentMember(request);
-    const name = request.body.name;
-    const gender = request.body.gender;
-    const email = request.body.email;
     const password = request.body.password;
     const address = request.body.address;   
     const height = request.body.height;
     const startweight = request.body.startweight;            
     const update =  request.body;
 
-    if(update.password !="" || update.address != ""){
-      memberstore.updateUser(loggedInUser, update)
+    if(update.password !="" || update.address != "" || update.height !="" || update.startingweight != ""){
+      memberstore.updateMember(loggedInUser, update)
     }
-
    response.redirect('/dashboard')
-
   },
 };
 
